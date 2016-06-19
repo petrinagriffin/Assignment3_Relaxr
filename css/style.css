@@ -232,7 +232,8 @@ article p::first-letter {
   color: #616160;
   font-family: 'Open Sans';
   font-weight: 600;
-  font-size: 70px;
+  font-size: 80px;
+  line-height: 65px;
   float: left;
   padding-right: 5px;
 }
