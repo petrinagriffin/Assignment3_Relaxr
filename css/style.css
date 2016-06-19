@@ -1,0 +1,404 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+main {
+  display: flex;
+}
+
+#navButt a {
+  padding-top: 2px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 14px;
+  color: yellow;
+  text-decoration: none;
+}
+
+#sidebar nav {
+    width: 365px;
+    background-color: #efefee;
+    margin: auto;
+    height: auto;
+    padding-left: 20px;
+    align-items: left;
+}
+
+#sidebar a {
+  padding-top: 2px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 1200px;
+  margin: auto;
+  background-color: #efefee;
+}
+
+#mainContainer {
+  width: auto;
+  padding-left: 120px;
+}
+
+#mainContainer {
+  background-size: cover;
+  width: 100%;
+  margin: auto;
+  height: auto;
+  background-color: #efefee;
+  padding-bottom: 50px;
+}
+
+#container4 {
+width: 100%;
+background-color: #f9e42e;
+width: 1200px;
+margin: auto;
+height: 80px;
+text-align: center;
+padding-top: 0px;
+padding-bottom: 10px;
+width: 1200px;
+margin: auto;
+}
+
+#container5 {
+  width: 100%;
+  background-color: #121212;
+  width: 1200px;
+  margin: auto;
+  height: 150px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  width: 1200px;
+  margin: auto;
+}
+
+footer {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 9px;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #121212;
+  text-align: center;
+  width: 1200px;
+  margin: auto;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+h1 {
+  font-family: 'Open Sans';
+  font-weight: 800;
+  font-size: 28px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 32px;
+  color: black;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: left;
+  max-width: 550px
+}
+
+h3 {
+  font-family: 'Open Sans';
+  font-weight: 800;
+  font-size: 28px;
+  color: #043049;
+  padding-top: 30px;
+  padding-left: 0px;
+  text-align: left;
+}
+
+h4 {
+  padding-top: 10px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 16px;
+  color: black;
+  max-width: 240px;
+}
+
+p {
+  padding-top: 20px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 20px;
+  color: #616160;
+  max-width: 700px;
+}
+
+li {
+  padding-top: 2px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+.si {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+
+.navMain {
+  height: 120px;
+  background-color: #043049;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+article p::first-letter {
+  color: #616160;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 70px;
+  float: left;
+  padding-right: 5px;
+}
+
+.logo {
+  display: flex;
+  flex-grow: 1;
+}
+
+.logo .actualLogo {
+  font-family: 'Open Sans';
+  font-weight: 800;
+  font-size: 40px;
+  color: white;
+  padding-top: 28px;
+  padding-bottom: 40px;
+  padding-left: 120px;
+  text-decoration: none;
+  margin-right: 50px;
+  flex-grow: 1;
+}
+
+.logoInverted {
+  font-family: 'Open Sans';
+  font-weight: 800;
+  font-size: 40px;
+  padding-top: 20px;
+  text-decoration: none;
+  color: #f9e42e;
+}
+
+.navButt {
+  display: flex;
+  align-items: center;;
+  flex-grow: 3;
+  text-align: center;
+  padding-right: 80px;
+  padding-left: 40px;
+}
+
+.navButt a {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 20px;
+  color: #f9e42e;
+  text-decoration: none;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.navButt .about {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  flex-grow: 1;
+}
+
+.navButt .faq {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  flex-grow: 1;
+}
+
+.navButt .team {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  flex-grow: 1;
+}
+
+.navButt .contact {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  flex-grow: 1;
+}
+
+.navButt .blog {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  flex-grow: 1;
+}
+
+.socialMediaImage {
+  display: inline-block;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+.adImage {
+  padding-top: 40px;
+  padding-right: 10px;
+  padding-left: 0px;
+  align-items: left;
+}
+
+.button {
+  border: 2px;
+  border-radius: 5px;
+  background-color: black;
+  background-position: center;
+  padding-top: 5px;
+  display: inline-block;
+  font-family: 'Open Sans';
+  font-weight: 800;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: white;
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.button:hover {
+  background-color: #909090;
+  color: white;
+}
+
+.buttonHolder {
+  text-align: center;
+}
+
+header {
+  display: flex;
+  background-size: cover;
+  width: 100%;
+  margin: auto;
+  height: 120px;
+  background-color: #043049;
+}
+
+.blogImage {
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.readMore {
+  display: block;
+  text-align: right;
+  font-family: 'Open Sans';
+  font-weight: 800;
+  font-size: 16px;
+  color: #043049;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+hr {
+  width: 100%;
+  padding-right: 20px;
+}
+
+footer .logo {
+  color: yellow;
+}
